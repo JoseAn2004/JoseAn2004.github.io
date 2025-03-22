@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Jose Chavez</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+</head>
+<body>
+    <!-- 🔹 Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Jose A. Chavez</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 🔹 Contenido Principal -->
+    <main class="contenido">
+        <section id="inicio">
+            <div class="inicio-contenido">
+                <div class="inicio-texto">
+                    <!-- Saludo con nombre -->
+                    <h2>Hola,<br>Mi nombre es <span class="nombre-destacado">Jose Chavez</span></h2>
+                    <p>Estudiante de Ingeniería de Sistemas</p>
+                    <!-- Texto dinámico con efecto de escritura -->
+                    <div class="texto-dinamico">
+                        <span class="habilidad">Desarrollo Web</span>
+                        <span class="habilidad">Desarrollo Móvil</span>
+                        <span class="habilidad">Bases de Datos</span>
+                        <span class="habilidad">Análisis de Datos</span>
+                    </div>
+                    <!-- Iconos y botones -->
+                    <div class="inicio-botones">
+                        <a href="https://github.com/tu-usuario" target="_blank" class="icono-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" class="icono-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://drive.google.com/file/d/1kPTiRBmXkpzNENYGZ1ZiY436yKTRK8yF/preview" target="_blank" class="btn-cv">Ver CV</a>
+                    </div>
+                </div>
+                <!-- Imagen con efecto de hover -->
+                <div class="inicio-imagen">
+                    <img src="../img/perfil.png" alt="Foto de Jose Chavez">
+                </div>
+            </div>
+        </section>
+
+
+        <section id="sobre-mi" class="sobre-mi-section">
+            <div class="container">
+                <h2 class="section-title">Sobre Mí</h2>
+                <div class="sobre-mi-content">
+                    <div class="sobre-mi-text">
+                        <p>
+                            Soy estudiante de Ingeniería de Sistemas en la Universidad Privada San Juan Bautista, cursando el 8vo ciclo, con enfoque en el desarrollo de software y análisis de datos. Tengo experiencia en desarrollo de aplicaciones móviles con Flutter, web con PHP y Python, y escritorio con Java y Python. Además, manejo bases de datos relacionales como MySQL y SQL Server.
+                        </p>
+                        <p>
+                            Me apasiona trabajar en equipo, enfrentar desafíos tecnológicos y contribuir en proyectos innovadores que combinen desarrollo y análisis de datos para crear soluciones de alto impacto. Siempre estoy en busca de nuevas oportunidades para aprender y crecer profesionalmente, aplicando mis conocimientos en entornos dinámicos y colaborativos.
+                        </p>
+                        <p>
+                            Además de mi formación académica, he participado en varios proyectos personales y colaborativos que han fortalecido mis habilidades técnicas y mi capacidad para resolver problemas de manera eficiente. Me considero una persona proactiva, con gran capacidad de adaptación y siempre dispuesta a asumir nuevos retos.
+                        </p>
+                    </div>
+                    <div class="sobre-mi-image">
+                        <img src="../img/perfil.png" alt="Tu Foto">
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="habilidades" class="habilidades-mi-seccion">
+            <div class="container">
+                <h2 class="section-title">Habilidades y Aptitudes</h2>
+                <div class="habilidades-content">
+                    <!-- Sección de Habilidades Técnicas -->
+                    <div class="sobre-mi-skills">
+                        <h3>Habilidades Técnicas</h3>
+                        <ul>
+                            <li>Desarrollo móvil con Flutter</li>
+                            <li>Desarrollo web con PHP y Python</li>
+                            <li>Desarrollo de escritorio con Java y Python</li>
+                            <li>Bases de datos relacionales (MySQL, SQL Server)</li>
+                            <li>Análisis de datos</li>
+                        </ul>
+                    </div>
+        
+                    <!-- Sección de Aptitudes Personales -->
+                    <div class="sobre-mi-aptitudes">
+                        <h3>Aptitudes</h3>
+                        <ul>
+                            <li>Trabajo en equipo</li>
+                            <li>Proactividad</li>
+                            <li>Liderazgo</li>
+                            <li>Adaptabilidad</li>
+                            <li>Resolución de problemas</li>
+                            <li>Comunicación efectiva</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+
+        <section id="proyectos" class="proyectos-section">
+            <!-- Título principal -->
+            <h2 class="section-title">Proyectos</h2>
+            
+            <div class="proyectos-grid">
+                <!-- Proyecto 1: Sistema de Gestión de Inventario para Veterinaria (Web) -->
+                <div class="proyecto web">
+                    <div class="imagen-slider">
+                        <div class="imagenes-container">
+                            <img src="../img/FTs/vet/vet1.png" alt="Imagen 1" class="proyecto-imagen">
+                            <img src="../img/FTs/vet/vet2.png" alt="Imagen 2" class="proyecto-imagen">
+                            <img src="../img/FTs/vet/vet3.png" alt="Imagen 3" class="proyecto-imagen">
+                            <img src="../img/FTs/vet/vet4.png" alt="Imagen 4" class="proyecto-imagen">
+                            <img src="../img/FTs/vet/vet6.png" alt="Imagen 5" class="proyecto-imagen">
+                            <img src="../img/FTs/vet/vet7.png" alt="Imagen 6" class="proyecto-imagen">
+                        </div>
+                        <button class="prev">&#10094;</button>
+                        <button class="next">&#10095;</button>
+                    </div>
+                    <h3>Sistema de Gestión de Inventario para Veterinaria</h3>
+                    <p>
+                        Desarrollo de un sistema web para gestionar el inventario de medicamentos, productos y suministros en una clínica veterinaria.
+                        Se utilizó PHP con una base de datos MySQL para realizar registros de entradas y salidas, generar reportes de stock y facilitar la gestión de órdenes y compras.
+                    </p>
+                    <p><strong>Tecnologías utilizadas:</strong> PHP, MySQL</p>
+                    <p><strong>Tipo de sistema:</strong> <span class="tipo-proyecto web"><i class="fas fa-laptop"></i> Web</span></p>
+                    <p><strong>Lenguaje utilizado:</strong> PHP, MySQL</p>
+                    <a href="./ver-mas/detalleproyecto1.html" class="btn">Más Detalles</a>
+                </div>
+        
+                <!-- Proyecto 2: Sistema para Alquileres de Maquinarias en una Constructora (Escritorio) -->
+                <div class="proyecto escritorio">
+                    <div class="imagen-slider">
+                        <div class="imagenes-container">
+                            <img src="../img/FTs/aris/ari1.jpg" alt="Imagen 1" class="proyecto-imagen">
+                            <img src="../img/FTs/aris/ari2.jpg" alt="Imagen 2" class="proyecto-imagen">
+                            <img src="../img/FTs/aris/ari3.jpg" alt="Imagen 3" class="proyecto-imagen">
+                            <img src="../img/FTs/aris/ari4.jpg" alt="Imagen 4" class="proyecto-imagen">
+                        </div>
+                        <button class="prev">&#10094;</button>
+                        <button class="next">&#10095;</button>
+                    </div>
+                    <h3>Sistema para Alquileres de Maquinarias en una Constructora</h3>
+                    <p>
+                        Desarrollo de una aplicación de escritorio para gestionar el alquiler de maquinarias pesadas.
+                        Se utilizó Java con base de datos SQL Server para registrar la disponibilidad de equipos, gestionar las reservas y realizar seguimientos de alquileres.
+                    </p>
+                    <p><strong>Tecnologías utilizadas:</strong> Java, SQL Server</p>
+                    <p><strong>Tipo de sistema:</strong> <span class="tipo-proyecto escritorio"><i class="fas fa-desktop"></i> Escritorio</span></p>
+                    <p><strong>Lenguaje utilizado:</strong> Java, SQL Server</p>
+                    <a href="./ver-mas/detalleproyecto3.html" class="btn">Más Detalles</a>
+                </div>
+            </div>
+        
+            <div class="proyectos-grid">
+                <!-- Proyecto 3: Sistema de Reconocimiento Facial (Móvil) -->
+                <div class="proyecto movil">
+                    <div class="imagen-slider">
+                        <div class="imagenes-container">
+                            <img src="../img/FTs/reconocimiento/re1.jpeg" style="height: 550px" alt="Imagen 1" class="proyecto-imagen">
+                            <img src="../img/FTs/reconocimiento/re2.jpeg" style="height: 550px" alt="Imagen 2" class="proyecto-imagen">
+                            <img src="../img/FTs/reconocimiento/re3.jpeg" style="height: 550px" alt="Imagen 3" class="proyecto-imagen">
+                            <img src="../img/FTs/reconocimiento/re4.jpeg" style="height: 550px" alt="Imagen 4" class="proyecto-imagen">
+                            <img src="../img/FTs/reconocimiento/re5.jpeg" style="height: 550px"alt="Imagen 5" class="proyecto-imagen">
+                        </div>
+                        <button class="prev">&#10094;</button>
+                        <button class="next">&#10095;</button>
+                    </div>
+                    <div class="descripcion">
+                        <h3>Sistema de Reconocimiento Facial</h3>
+                        <p>
+                            Implementación de un sistema móvil de reconocimiento facial utilizando Flutter para la interfaz,
+                            Python para la generación del API que activa una cerradura conectada a un ESP32, y Arduino para el control de la cerradura.
+                        </p>
+                        <p><strong>Tecnologías utilizadas:</strong> Flutter, Python, Arduino, ESP32</p>
+                        <p><strong>Tipo de sistema:</strong> <span class="tipo-proyecto movil"><i class="fas fa-mobile-alt"></i> Móvil</span></p>
+                        <p><strong>Lenguaje utilizado:</strong> Flutter, Python, Arduino</p>
+                        <a href="./ver-mas/detalleproyecto2.html" class="btn">Más Detalles</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contacto-section">
+            <div class="container">
+                <h2 class="section-title">Contacto</h2>
+                <div class="contacto-content">
+                    <!-- 🔹 IZQUIERDA: Información de contacto -->
+                    <div class="contacto-info">
+                        <div class="info-item">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <p class="contact-text">jc6104375@gmail.com</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <p class="contact-text">Perú</p>
+                        </div>
+                    </div>
+        
+                    <!-- 🔹 DERECHA: Formulario -->
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="nombre" class="form-label">Tu Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Tu Correo Electrónico:</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje" class="form-label">Tu Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" class="form-textarea" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="form-button">Enviar Mensaje</button>
+                        <p id="response"></p>
+                    </form>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <script type="text/javascript">
+            // Inicializamos EmailJS con tu clave pública
+            (function() {
+                emailjs.init('SyC1eXsDIoaw0PTOs'); // Reemplaza con tu User ID (clave pública)
+            })();
+        
+            // Escucha el evento de submit del formulario
+            document.getElementById('contact-form').addEventListener('submit', function(e) {
+                e.preventDefault(); // Previene que el formulario se envíe de la manera tradicional
+        
+                // Obtenemos los valores de los campos del formulario
+                const nombre = document.getElementById('nombre').value;
+                const email = document.getElementById('email').value;
+                const mensaje = document.getElementById('mensaje').value;
+        
+                // Los datos que enviaremos a través de EmailJS
+                const templateParams = {
+                    name: nombre,  // Para la variable {{name}} en tu plantilla
+                    email: email,  // Para la variable {{email}} en tu plantilla
+                    message: mensaje // Para la variable {{message}} en tu plantilla
+                };
+        
+                // Enviar el mensaje utilizando EmailJS
+                emailjs.send('service_cy9z47d', 'template_ynmdkq4', templateParams)  // Reemplaza con tu Template ID
+                    .then(function(response) {
+                        // Si el mensaje es enviado correctamente
+                        document.getElementById('response').innerHTML = '<p class="success-message">¡Mensaje enviado correctamente!</p>';
+                        document.getElementById('contact-form').reset(); // Reseteamos el formulario
+                    }, function(error) {
+                        // Si hay un error al enviar el mensaje
+                        document.getElementById('response').innerHTML = '<p class="error-message">Error al enviar el mensaje: ' + error.text + '</p>';
+                    });
+            });
+        </script>
+        
+    </main>
+    <!-- 🔹 Footer -->
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i> <!-- Icono de LinkedIn -->
+            </a>
+            <a href="https://github.com/tu-usuario" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i> <!-- Icono de GitHub -->
+            </a>
+        </div>
+        <p>&copy; 2025 - Todos los derechos reservados</p>
+    </footer>
+    <script src="funciones.js"></script>
+
+</body>
+</html>
